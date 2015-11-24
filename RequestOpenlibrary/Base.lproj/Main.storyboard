@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RequestOpenlibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-sR-7lq">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce el ISBN a buscar...." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4vK-cR-8Lg">
+                                <rect key="frame" x="12" y="92" width="296" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ytq-cf-nre"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="webSearch"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oxL-pa-gBY">
+                                <rect key="frame" x="16" y="151" width="288" height="387"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request ISBN Openlibrary.org " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIn-JE-Iqu">
+                                <rect key="frame" x="-8" y="0.0" width="340" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="sMm-5o-uhF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2Xs-Vb-mMb"/>
+                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Liw-MV-uTb"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="top" secondItem="4vK-cR-8Lg" secondAttribute="bottom" constant="29" id="NNB-eP-Jpi"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYn-UI-bf9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oxL-pa-gBY" secondAttribute="bottom" constant="30" id="P5h-NX-1sn"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PBO-oO-sUI"/>
+                            <constraint firstItem="bCA-sR-7lq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="R6y-PY-SXI"/>
+                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="XnM-Yu-t5R"/>
+                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="bOL-34-jWS"/>
+                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-177" id="cwA-Oe-qRa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCA-sR-7lq" secondAttribute="bottom" id="eRj-vQ-YQK"/>
+                            <constraint firstItem="bCA-sR-7lq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iIT-YO-6QJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4vK-cR-8Lg" secondAttribute="trailing" constant="-4" id="itV-dL-txE"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kZo-KW-ex0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bCA-sR-7lq" secondAttribute="trailing" constant="-20" id="p7t-Cd-qYH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oIn-JE-Iqu" secondAttribute="trailing" constant="-28" id="qpL-Ce-6Qw"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60.5" id="xU6-gU-wPL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultISBNSearch" destination="oxL-pa-gBY" id="Mfb-3U-KzV"/>
+                        <outlet property="txtISBNSearch" destination="4vK-cR-8Lg" id="JOF-1A-5ZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo" width="414" height="550"/>
+    </resources>
+</document>

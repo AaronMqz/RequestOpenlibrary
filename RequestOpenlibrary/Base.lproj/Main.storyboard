@@ -19,56 +19,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-sR-7lq">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                                <rect key="frame" x="-12" y="0.0" width="344" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce el ISBN a buscar...." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4vK-cR-8Lg">
-                                <rect key="frame" x="12" y="92" width="296" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ytq-cf-nre"/>
-                                </constraints>
+                                <rect key="frame" x="56" y="60" width="208" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oxL-pa-gBY">
-                                <rect key="frame" x="16" y="151" width="288" height="387"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oxL-pa-gBY">
+                                <rect key="frame" x="0.0" y="498" width="320" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0eN-nN-W13"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request ISBN Openlibrary.org " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIn-JE-Iqu">
-                                <rect key="frame" x="-8" y="0.0" width="340" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Openlibrary.org " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIn-JE-Iqu">
+                                <rect key="frame" x="-20" y="0.0" width="360" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="sMm-5o-uhF"/>
+                                    <constraint firstAttribute="height" constant="49" id="PsL-DO-8nb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8x-y7-rpz">
+                                <rect key="frame" x="0.0" y="460" width="320" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nlD-gn-zH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-eG-EhC">
+                                <rect key="frame" x="41" y="127" width="239" height="313"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2Xs-Vb-mMb"/>
-                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Liw-MV-uTb"/>
-                            <constraint firstItem="oxL-pa-gBY" firstAttribute="top" secondItem="4vK-cR-8Lg" secondAttribute="bottom" constant="29" id="NNB-eP-Jpi"/>
-                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYn-UI-bf9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oxL-pa-gBY" secondAttribute="bottom" constant="30" id="P5h-NX-1sn"/>
-                            <constraint firstItem="oxL-pa-gBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PBO-oO-sUI"/>
-                            <constraint firstItem="bCA-sR-7lq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="R6y-PY-SXI"/>
-                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="XnM-Yu-t5R"/>
-                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="bOL-34-jWS"/>
-                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-177" id="cwA-Oe-qRa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCA-sR-7lq" secondAttribute="bottom" id="eRj-vQ-YQK"/>
-                            <constraint firstItem="bCA-sR-7lq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iIT-YO-6QJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4vK-cR-8Lg" secondAttribute="trailing" constant="-4" id="itV-dL-txE"/>
-                            <constraint firstItem="oxL-pa-gBY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kZo-KW-ex0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bCA-sR-7lq" secondAttribute="trailing" constant="-20" id="p7t-Cd-qYH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oIn-JE-Iqu" secondAttribute="trailing" constant="-28" id="qpL-Ce-6Qw"/>
-                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60.5" id="xU6-gU-wPL"/>
+                            <constraint firstItem="Hg3-eG-EhC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="51F-ZR-eop"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="81W-5Y-FPx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oIn-JE-Iqu" secondAttribute="trailing" constant="-36" id="9KJ-wa-wlm"/>
+                            <constraint firstItem="Hg3-eG-EhC" firstAttribute="top" secondItem="4vK-cR-8Lg" secondAttribute="bottom" constant="37" id="9PH-lw-kKj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hg3-eG-EhC" secondAttribute="trailing" constant="24" id="A70-DR-bSE"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="4vK-cR-8Lg" secondAttribute="centerX" id="Gf1-iM-GfR"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="bCA-sR-7lq" secondAttribute="centerX" id="HNd-il-r9u"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="Hg3-eG-EhC" secondAttribute="centerX" id="I4k-kK-sEU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z8x-y7-rpz" secondAttribute="trailing" constant="-16" id="KPh-1i-Aqs"/>
+                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="LRr-pX-hum"/>
+                            <constraint firstItem="z8x-y7-rpz" firstAttribute="top" secondItem="Hg3-eG-EhC" secondAttribute="bottom" constant="20" id="PaB-pF-Zx6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCA-sR-7lq" secondAttribute="bottom" id="Phn-5E-2ux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hg3-eG-EhC" secondAttribute="trailing" constant="24" id="Spx-um-oKZ"/>
+                            <constraint firstItem="bCA-sR-7lq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UP1-Wf-AnV"/>
+                            <constraint firstItem="Hg3-eG-EhC" firstAttribute="top" secondItem="4vK-cR-8Lg" secondAttribute="bottom" constant="37" id="Vfj-Qd-Stm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bCA-sR-7lq" secondAttribute="trailing" constant="-28" id="Y8k-0L-z9E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oxL-pa-gBY" secondAttribute="bottom" constant="40" id="YBV-Fp-hMj"/>
+                            <constraint firstItem="z8x-y7-rpz" firstAttribute="top" secondItem="Hg3-eG-EhC" secondAttribute="bottom" constant="20" id="YfM-Vg-McK"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="top" secondItem="z8x-y7-rpz" secondAttribute="bottom" constant="8" symbolic="YES" id="e9P-BU-H8A"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="top" secondItem="z8x-y7-rpz" secondAttribute="bottom" constant="8" id="nph-hF-cSE"/>
+                            <constraint firstItem="z8x-y7-rpz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="oN1-FZ-3Jh"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="z8x-y7-rpz" secondAttribute="centerX" id="oNE-iL-jVf"/>
+                            <constraint firstItem="oIn-JE-Iqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-36" id="oUr-Dp-wZO"/>
+                            <constraint firstItem="bCA-sR-7lq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-28" id="owq-t5-l06"/>
+                            <constraint firstItem="oxL-pa-gBY" firstAttribute="centerX" secondItem="oIn-JE-Iqu" secondAttribute="centerX" id="rwV-nH-Umt"/>
+                            <constraint firstItem="4vK-cR-8Lg" firstAttribute="top" secondItem="oIn-JE-Iqu" secondAttribute="bottom" constant="11" id="ugd-bd-y34"/>
+                            <constraint firstItem="Hg3-eG-EhC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="uzW-mp-icd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgPortada" destination="Hg3-eG-EhC" id="bQp-Ue-iO7"/>
+                        <outlet property="lblTitulo" destination="z8x-y7-rpz" id="Mfj-Ig-5GV"/>
                         <outlet property="resultISBNSearch" destination="oxL-pa-gBY" id="Mfb-3U-KzV"/>
                         <outlet property="txtISBNSearch" destination="4vK-cR-8Lg" id="JOF-1A-5ZD"/>
                     </connections>
